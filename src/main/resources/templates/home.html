@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 
 <head>
 	<meta charset="UTF-8">
@@ -8,10 +8,18 @@
 
 <body>
 
+
+
 	<h2>luv2code Company Home Page</h2>
 	<hr>
+	<p>
 	Welcome to the luv2code company home page!
-
+	</p>
+	
+	<form action="#" th:action="@{/logout}" method="POST">
+	
+		<input type="submit" value="Logout" />
+	</form>
 </body>
 
 </html>
